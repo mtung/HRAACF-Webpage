@@ -2,8 +2,8 @@
 
     // require common code
     require_once("includes/common.php"); 
-
-    // escape username to avoid SQL injection attacks
+	
+	// escape username to avoid SQL injection attacks
     $username = mysql_real_escape_string($_POST["username"]);
 
     // prepare SQL

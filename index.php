@@ -11,7 +11,7 @@
 
   <head>
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <title>C$50 Finance: Home</title>
+    <title>HRAACF Home</title>
   </head>
 
   <body>

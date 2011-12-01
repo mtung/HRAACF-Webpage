@@ -2,8 +2,10 @@
 
     // require common code
     require_once("includes/common.php");
+	
+	apologize("Hi");
 
-?>
+  ?>
 
 <!DOCTYPE html>
 
@@ -11,11 +13,11 @@
 
   <head>
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <title>C$50 Finance: Log In</title>
+    <title>HRAACF Log In</title>
   </head>
 
   <body>
-
+  
     <div id="top">
       <a href="index.php"><img alt="C$50 Finance" src="images/logo.gif"></a>
     </div>
