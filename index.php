@@ -3,6 +3,10 @@
     // require common code
     require_once("includes/common.php"); 
 
+	// identify user
+	require_once("identify.php");
+	
+
 ?>
 
 <!DOCTYPE html>
@@ -21,12 +25,13 @@
     </div>
 
     <div id="middle">
+	Welcome, <? echo $user["name"] ?>!
     </div>
 
     <div id="bottom">
       <a href="logout.php">log out</a>
 	  |
-	  <a href="changepassword.php">change your password</a>
+	  <a href="changeaccount.php">change your account information</a>
     </div>
 
   </body>

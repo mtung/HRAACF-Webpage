@@ -25,11 +25,11 @@
     require_once("helpers.php");
 
     // require authentication for most pages
-    if (!preg_match("{/(:?login|logout|register)\d*\.php$}", $_SERVER["PHP_SELF"]))
-    {
-        if (!isset($_SESSION["id"]))
-            redirect("login.php");
-    }
+    // if (!preg_match("{/(:?login|logout|register)\d*\.php$}", $_SERVER["PHP_SELF"]))
+    //{
+    //    if (!isset($_SESSION["id"]))
+    //        redirect("login.php");
+    //}
 
     // connect to database server
     if (($connection = @mysql_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD)) === false)

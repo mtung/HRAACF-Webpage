@@ -2,7 +2,14 @@
 
     // require common code
     require_once("includes/common.php");
-
+	
+	// identify user
+	require_once("identify.php");
+	
+	// if another user signed in, apologize
+	if($user["id"] != 0)
+		apologize("Please sign out the current user first!");
+		
   ?>
 
 <!DOCTYPE html>
