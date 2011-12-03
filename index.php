@@ -25,6 +25,8 @@
 
     <div id="bottom">
       <a href="logout.php">log out</a>
+	  |
+	  <a href="changepassword.php">change your password</a>
     </div>
 
   </body>

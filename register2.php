@@ -16,7 +16,8 @@
   $hash = crypt($_POST["password"]);
 
   // ...then insert user and obtain id
-  $sql = "INSERT INTO users(username, hash) VALUES('$username', '$hash')";
+  $sql = "INSERT INTO users(username, hash, exec, ministry) 
+		 VALUES('$username', '$hash', 0, 0)";
   $result = mysql_query($sql);
 
   // alert user if they cannot register
