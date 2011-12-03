@@ -2,8 +2,6 @@
 
     // require common code
     require_once("includes/common.php");
-	
-	apologize("Hi");
 
   ?>
 
@@ -19,7 +17,7 @@
   <body>
   
     <div id="top">
-      <a href="index.php"><img alt="C$50 Finance" src="images/logo.gif"></a>
+      <a href="index.php"><img alt="HRAACF" src="images/logo.png"></a>
     </div>
 
     <div id="middle">

@@ -11,8 +11,8 @@
 
     // execute query
     $result = mysql_query($sql);
-
-    // if we found user, check password
+	
+	// if we found user, check password
     if (mysql_num_rows($result) == 1)
     {
         // grab row

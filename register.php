@@ -16,7 +16,7 @@
 
 <body>
   <div id="top">
-    <a href="index.php"><img alt="C$50 Finance" src="images/logo.gif"></a>
+    <a href="index.php"><img alt="C$50 Finance" src="images/logo.png"></a>
   </div>
   <div id="middle">
     <form action="register2.php" method="post">
