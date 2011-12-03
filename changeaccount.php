@@ -32,11 +32,11 @@
 		  <td><a href="changepassword.php">Change Password</a></td>
 		</tr>
 		<tr>
-		  <td><a href="changename.php">Change Name</a></td>
+		  <td><a href="changename.php">Set Name</a></td>
 	      <td><? echo($user["name"]) ?></td>
 		</tr>
 		<tr>
-		  <td><a href="changeemail.php">Change Email</a></td>
+		  <td><a href="changeemail.php">Set Email</a></td>
 	      <td><? echo($user["email"]) ?></td>
 		</tr>
 	  </table>

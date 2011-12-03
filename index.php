@@ -6,6 +6,10 @@
 	// identify user
 	require_once("identify.php");
 	
+	// create placeholder name
+	if(empty($user["name"]))
+		$user["name"] = "Unnamed Individual";
+	
 
 ?>
 

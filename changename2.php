@@ -22,7 +22,7 @@
     apologize("Unable to change name");
 
   // redirect to home page
-  redirect("index.php");
+  redirect("changeaccount.php");
 
 
 

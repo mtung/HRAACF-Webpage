@@ -36,7 +36,7 @@
     apologize("Unable to change password");
 
   // redirect to home page
-  redirect("index.php");
+  redirect("changeaccount.php");
 
 
 

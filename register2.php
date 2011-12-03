@@ -31,7 +31,7 @@
   $_SESSION["id"] = $id;
 
   // redirect to portfolio
-  redirect("index.php");
+  redirect("changeaccount.php");
 
 
 
