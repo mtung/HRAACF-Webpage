@@ -6,7 +6,7 @@
 	// identify user
 	require_once("identify.php");
 	
-	// if user is not an approved member redirect to index
+	// if user is a guest redirect to index
 	if($user["id"] == 0)
 		apologize("Sorry! Only members can change their information!");
 

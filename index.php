@@ -21,7 +21,7 @@
   <body>
 
     <div id="top">
-      <a href="index.php"><img alt="C$50 Finance" height="110" src="images/logo.png"></a>
+      <a href="index.php"><img alt="HRAACF Logo" height="110" src="images/logo.png"></a>
     </div>
 
     <div id="middle">
@@ -33,18 +33,7 @@
     </div>
 
     <div id="bottom">     
-	  <?  
-		  $html1 = "<a href='logout.php'>log out</a>";
-	      $html2 = "<a href='login.php'>log in</a>";
-		  $html3 = " | <a href='changeaccount.php'>change your account information</a>";
-		  if($user["id"] != 0)
-		  {
-		    print($html1);
-			print($html3);
-		  }
-		  else
-		    print($html2);
-	  ?>
+	  <?include_once("userspecificoptions.php");?>
     </div>
 
   </body>
