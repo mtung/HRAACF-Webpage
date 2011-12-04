@@ -5,12 +5,8 @@
 
 	// identify user
 	require_once("identify.php");
-	
-	// create placeholder name
-	if(empty($user["name"]))
-		$user["name"] = "Unnamed Individual";
-	
 
+	
 ?>
 
 <!DOCTYPE html>
@@ -29,13 +25,25 @@
     </div>
 
     <div id="middle">
-	Welcome, <? echo $user["name"] ?>!
+	  Welcome<?  
+	  $html = ", ".$user["name"];
+	  if($user["approved"] != 0)
+	  echo $html 
+	  ?>!
     </div>
 
-    <div id="bottom">
-      <a href="logout.php">log out</a>
-	  |
-	  <a href="changeaccount.php">change your account information</a>
+    <div id="bottom">     
+	  <?  
+		  $html1 = "<a href='logout.php'>log out</a>";
+	      $html2 = "<a href='login.php'>log in</a>";
+		  $html3 = " | <a href='changeaccount.php'>change your account information</a>";
+		  if($user["id"] != 0)
+		    print($html1);
+		  else
+		    print($html2);
+		  if($user["approved"] != 0)
+		    print($html3);
+	  ?>
     </div>
 
   </body>

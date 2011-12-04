@@ -9,7 +9,7 @@
 
   // ...then change the hashed value of password
   $id = $user["id"];
-  $sql = "UPDATE users SET name = '$name' WHERE id ='$id'";
+  $sql = "UPDATE users SET name = '$name' WHERE id ='$id' AND approved = 1";
   $result = mysql_query($sql);
 
   // alert user if they cannot change passwords

@@ -9,7 +9,7 @@
 
   // ...then change the email
   $id = $user["id"];
-  $sql = "UPDATE users SET email = '$email' WHERE id ='$id'";
+  $sql = "UPDATE users SET email = '$email' WHERE id ='$id' AND approved = 1";
   $result = mysql_query($sql);
 
   // alert user if they cannot change email

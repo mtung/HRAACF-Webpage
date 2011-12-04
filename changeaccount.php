@@ -5,6 +5,10 @@
 
 	// identify user
 	require_once("identify.php");
+	
+	// if user is not an approved member redirect to index
+	if($user["id"] == 0)
+		apologize("Sorry! Only approved members can change their information!");
 
 ?>
 

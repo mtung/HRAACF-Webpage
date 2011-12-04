@@ -16,8 +16,8 @@
   $hash = crypt($_POST["password"]);
 
   // ...then insert user and obtain id
-  $sql = "INSERT INTO users(username, hash, exec, ministry) 
-		 VALUES('$username', '$hash', 0, 0)";
+  $sql = "INSERT INTO users(username, hash, exec, ministry, approved) 
+		 VALUES('$username', '$hash', 0, 0, 0)";
   $result = mysql_query($sql);
 
   // alert user if they cannot register
@@ -30,8 +30,8 @@
   // login new user
   $_SESSION["id"] = $id;
 
-  // redirect to portfolio
-  redirect("changeaccount.php");
+  // inform user that their registration is being reviewed
+  redirect("beingreviewed.php");
 
 
 
