@@ -27,7 +27,7 @@
     <div id="middle">
 	  Welcome<?  
 	  $html = ", ".$user["name"];
-	  if($user["approved"] != 0)
+	  if(($user["approved"] != 0) & !empty($user["name"]))
 	  echo $html 
 	  ?>!
     </div>
