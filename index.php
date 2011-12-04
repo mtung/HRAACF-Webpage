@@ -27,7 +27,7 @@
     <div id="middle">
 	  Welcome<?  
 	  $html = ", ".$user["name"];
-	  if(($user["approved"] != 0) & !empty($user["name"]))
+	  if(($user["id"] != 0) & !empty($user["name"]))
 	  echo $html 
 	  ?>!
     </div>
@@ -38,11 +38,12 @@
 	      $html2 = "<a href='login.php'>log in</a>";
 		  $html3 = " | <a href='changeaccount.php'>change your account information</a>";
 		  if($user["id"] != 0)
+		  {
 		    print($html1);
+			print($html3);
+		  }
 		  else
 		    print($html2);
-		  if($user["approved"] != 0)
-		    print($html3);
 	  ?>
     </div>
 

@@ -4,12 +4,16 @@
   require_once("includes/common.php");
   require_once("identify.php");
 
-  // if these values check out, prepare values to insert into database...
+  // if guest manages to get here, redirect them to homepage
+  if($user["id"] == 0)
+    redirect("index.php");
+
+	// if these values check out, prepare values to insert into database...
   $name = mysql_real_escape_string($_POST["name"]);
 
   // ...then change the hashed value of password
   $id = $user["id"];
-  $sql = "UPDATE users SET name = '$name' WHERE id ='$id' AND approved = 1";
+  $sql = "UPDATE users SET name = '$name' WHERE id ='$id'";
   $result = mysql_query($sql);
 
   // alert user if they cannot change passwords

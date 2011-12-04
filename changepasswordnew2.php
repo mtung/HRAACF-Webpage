@@ -3,6 +3,10 @@
   // require common code
   require_once("includes/common.php");
 
+  // if guest manages to get here, redirect them to homepage
+  if($user["id"] == 0)
+    redirect("index.php");
+  
   // check that old password is correct
   $sql = "SELECT * FROM users WHERE users.id = ".$_SESSION["id"];
   $result = mysql_query($sql);
@@ -16,7 +20,7 @@
 
   // ...then change the hashed value of password
   $id = $_SESSION["id"];
-  $sql = "UPDATE users SET hash = '$hash' WHERE id ='$id' AND approved = 1";
+  $sql = "UPDATE users SET hash = '$hash' WHERE id ='$id'";
   $result = mysql_query($sql);
 
   // alert user if they cannot change passwords

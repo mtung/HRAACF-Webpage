@@ -8,7 +8,7 @@
 	
 	// if user is not an approved member redirect to index
 	if($user["id"] == 0)
-		apologize("Sorry! Only approved members can change their information!");
+		apologize("Sorry! Only members can change their information!");
 
 ?>
 
