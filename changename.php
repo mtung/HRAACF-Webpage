@@ -13,7 +13,18 @@
   <head>
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <title>Change Name</title>
-  </head>
+    <script>
+		function validate(f)
+		{
+		  if (f.name.value == "")
+		  {
+			alert("You must input a name.");
+			return false;
+		  }
+		  return true;
+		}   
+    </script>
+	</head>
 
   <body>
   
@@ -22,7 +33,7 @@
     </div>
 
     <div id="middle">
-      <form action="changename2.php" method="post">
+      <form action="changename2.php" method="post" onsubmit="return validate(this);">
         <table>
           <tr>
             <td>Full Name:</td>

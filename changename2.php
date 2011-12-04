@@ -4,11 +4,6 @@
   require_once("includes/common.php");
   require_once("identify.php");
 
-  // check that all fields have been filled
-  if(empty($_POST["name"]))
-    apologize("Please fill in all fields!");
-
-	
   // if these values check out, prepare values to insert into database...
   $name = mysql_real_escape_string($_POST["name"]);
 

@@ -29,7 +29,7 @@
     <div id="bottom">
 	  <table>
 	    <tr>
-		  <td><a href="changepassword.php">Change Password</a></td>
+		  <td><a href="changepasswordnew.php">Change Password</a></td>
 		</tr>
 		<tr>
 		  <td><a href="changename.php">Set Name</a></td>
