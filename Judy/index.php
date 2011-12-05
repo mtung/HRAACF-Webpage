@@ -1,3 +1,10 @@
+<? 
+
+require_once("includes/common.php"); 
+
+?> 
+
+
 <!DOCTYPE html>
 <html>	
 	<head>
@@ -11,14 +18,24 @@
 		<script src="scripts/jquery.cookie.js" type="text/javascript"></script>
 	</head> 
 		<body> 
+			
+			<?php include_once("identify.php");?>
+			<?php include_once("userspecificoptions.php");?>
 			<div id="top"> 
-				<?php include('includes/header.php');?>
-				<?php include('includes/login.php');?>
+				<?php include_once('includes/header.php');?>
+				<!-- <?php include_once('includes/login.php');?>--> 
+				<div id="middle">
+				  Welcome<?  
+				  $html = ", ".$user["name"];
+				  if(($user["id"] != 0) & !empty($user["name"]))
+				  echo $html 
+				  ?>!
+				</div> 
 			</div> 
 			
 			<div id="center">
 				<div id="left-side"> 
-				   <?php include('includes/navbar.php');?> 
+				   <?php include_once('includes/navbar.php');?> 
 				</div> 
 				
 				<div id="right-side"> 
@@ -29,8 +46,14 @@
 			</div>
 				
 			<div id="bottom"> 
-				<?php include('includes/footer.php');?>
+			
+				<?php include_once('includes/footer.php');?>
 			</div> 
 	   </body> 
 </html>
 			
+	
+
+    
+	 
+ 
