@@ -28,7 +28,7 @@
 	  Welcome<?  
 	  $html = ", ".$user["name"];
 	  if(($user["id"] != 0) & !empty($user["name"]))
-	  echo $html 
+	    echo $html 
 	  ?>!
     </div>
 
