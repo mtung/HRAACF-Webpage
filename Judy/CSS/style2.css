@@ -33,9 +33,13 @@ float: left;
 height: 800px; 
 }
 
-<<<<<<< HEAD
 #right-side 
-=======
+{
+ width: 100px; 
+ float:left; 
+ height: 800px; 
+}
+
 #CMS
 {
 background-color: yellow;
@@ -45,7 +49,6 @@ padding: 0px;
 }
 
 #bottom
->>>>>>> 85034694d9a00b274e70f483339771fdf7f980e0
 {
 /* background-color: orange; */  
 width:100px;
