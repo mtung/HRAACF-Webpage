@@ -1,0 +1,150 @@
+body
+{
+margin:0px;
+}
+
+#logo
+{
+padding-left:50px;
+width:500px;
+float:left;
+}
+
+#login
+{
+width:300px;
+float:left;
+}
+
+#top
+{
+/* background-color: red; */ 
+padding:50px;
+}
+
+#center
+{
+width:960px;
+display:block;
+margin-left:auto;
+margin-right:auto;
+}
+
+#left-side
+{
+/* background-color: green; */ 
+width:270px;
+float:left;
+padding:20px;
+clear:left;
+}
+
+#right-side
+{
+/* background-color: yellow; */ 
+width:610px;
+float:left;
+padding:20px;
+}
+
+#bottom
+{
+/* background-color: blue;*/ 
+clear:left;
+}
+
+div#footer
+{
+ width: 850px; 
+ padding-top:150px; 
+ display: block; 
+ margin-left: auto; 
+ margin-right: auto; 
+
+}
+p#footer 
+{
+font-size:8pt; 
+text-align:center; 
+}
+
+ul
+{
+padding: 0px; 
+margin: 0px; 
+}
+
+li
+{
+font-family: 'Raleway';
+font-size: 20pt; 
+list-style: none; 
+color: #055e11;
+padding: 0px; 
+margin: 0px; 
+}
+
+li ul a 
+{
+font-family: 'Antic'; 
+font-size: 16pt; 
+list-style: none;
+color: #555252;
+padding: 3px 3px 3px 15px;; 
+margin: 0px;
+display: block;
+text-decoration: none;
+}
+
+ul li a 
+{
+text-decoration: none;
+}
+
+a:hover 
+{
+color: #6baed1; 
+}
+
+p {
+font-family: 'Antic';
+font-size:14px;
+color: #555252; 
+}
+
+h1 {font-family: 'Antic'; color: #555252; font-size:36px;}
+h2 {font-family: 'Antic'; color: #555252; font-size:24px;}
+
+#menu
+{
+ padding-top:25px;
+}
+
+ul#menu, ul#menu ul {
+  list-style-type:none;
+  margin: 0;
+}
+
+ul#menu a {
+  display: block;
+  text-decoration: none;	
+}
+
+ul#menu li a {
+  color: #055e11;	
+}
+
+ul#menu li a:hover {
+ color: #6baed1; 
+}
+
+ul#menu li ul li a {
+  color: #555252 ; 
+}
+
+ul#menu li ul li a:hover {
+color: #6baed1; 
+}
+
+
+
