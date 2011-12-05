@@ -15,6 +15,7 @@
     define("DB_NAME", "hraacf webpage");
 
     // your database's password
+
     define("DB_PASSWORD", "Marilyn1");
 
     // your database's server
