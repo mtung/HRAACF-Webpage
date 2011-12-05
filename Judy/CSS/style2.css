@@ -5,52 +5,41 @@ margin:0px;
 
 #logo
 {
-padding-left:50px;
-width:500px;
+width:450px;
 float:left;
 }
 
-#login
-{
-width:300px;
-float:left;
-}
-
-#top
-{
-/* background-color: red; */ 
-padding:50px;
-}
-
-#center
-{
+#wrapper {
 width:960px;
-display:block;
-margin-left:auto;
-margin-right:auto;
+margin:0 auto;
 }
 
 #left-side
 {
-/* background-color: green; */ 
-width:270px;
-float:left;
+/* background-color: green;*/ 
+width:250px;
+float: left; 
 padding:20px;
-clear:left;
+clear:left; 
+height: 800px; 
 }
 
-#right-side
+#center 
 {
 /* background-color: yellow; */ 
-width:610px;
-float:left;
-padding:20px;
+width:400px;
+padding:20px; 
+float: left;  
+height: 800px; 
 }
 
-#bottom
+#right-side 
 {
-/* background-color: blue;*/ 
-clear:left;
+/* background-color: orange; */  
+width:100px;
+padding:20px;
+float: left; 
+height: 800px; 
 }
 
 div#footer
@@ -60,8 +49,8 @@ div#footer
  display: block; 
  margin-left: auto; 
  margin-right: auto; 
-
 }
+
 p#footer 
 {
 font-size:8pt; 
@@ -146,5 +135,38 @@ ul#menu li ul li a:hover {
 color: #6baed1; 
 }
 
+.clear { /* generic container (i.e. div) for floating buttons */
+    overflow: hidden;
+    width: 100%;
+}
+
+a.button {
+    color: #444;
+    display: block;
+    float: left;
+    font-family: 'Antic'; 
+    font-size: 9pt; 
+    height: 24px;
+    margin-right: 6px;
+    padding-right: 18px; /* sliding doors padding */
+    text-decoration: none;
+}
+
+a.button span {
+    display: block;
+    line-height: 14px;
+    padding: 5px 0 5px 18px;
+}
+
+a.button:active {
+    background-position: bottom right;
+    color: #000;
+    outline: none; /* hide dotted outline in Firefox */
+}
+
+a.button:active span {
+    background-position: bottom left;
+    padding: 6px 0 4px 18px; /* push text down 1px */
+}
 
 

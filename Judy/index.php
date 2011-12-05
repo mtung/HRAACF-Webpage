@@ -21,34 +21,31 @@ require_once("includes/common.php");
 			
 			<?php include_once("identify.php");?>
 			<?php include_once("userspecificoptions.php");?>
-			<div id="top"> 
-				<?php include_once('includes/header.php');?>
-				<!-- <?php include_once('includes/login.php');?>--> 
-				<div id="middle">
-				  Welcome<?  
-				  $html = ", ".$user["name"];
-				  if(($user["id"] != 0) & !empty($user["name"]))
-				  echo $html 
-				  ?>!
-				</div> 
-			</div> 
 			
-			<div id="center">
+			<div id="wrapper">  
+				
 				<div id="left-side"> 
+				   <div id="logo">  
+ 						<a href="index.php"><img src="images/AACFLogo.png" width="300"/></a> 
+				   </div> 
 				   <?php include_once('includes/navbar.php');?> 
 				</div> 
 				
-				<div id="right-side"> 
-					<div class="content" id="home"> 
+				<div id="center"> 
+				<div class="content" id="home"> 
 					<!-- <?php include('includes/pictureslider.php');?> --> 
-					</div> 
+				</div>
+				</div> 
+				
+				<div id="right-side"> 
+					<?php include_once('includes/usernav.php');?> 
 				</div>
 			</div>
 				
-			<div id="bottom"> 
-			
+		<!--	<div id="bottom"> 
 				<?php include_once('includes/footer.php');?>
-			</div> 
+			</div> --> 
+		</div> 
 	   </body> 
 </html>
 			

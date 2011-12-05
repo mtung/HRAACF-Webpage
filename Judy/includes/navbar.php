@@ -9,7 +9,7 @@
 			</li> 
 		<li><a href="#">Get Involved</a>
 			<ul>
-				<? include("/includes/listministries.php");?>
+				<? include("listministries.php");?>
 			</ul>
 		</li> 					
 		<li><a href="discuss.php">Discuss</a></li> 

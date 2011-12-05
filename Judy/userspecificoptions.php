@@ -2,10 +2,10 @@
 	
 	$html1 = "<a href='logout.php'>Log out</a>";
 	$html2 = "<a href='login.php'>Log in</a>";
-	$html3 = " | <a href='changeaccount.php'>Change your information</a>";
-	$html4 = " | <a href='approvemembers.php'>View unapproved members</a>";
-	$html5 = " | <a href='createministry.php'>Create a ministry</a>";
-	$html6 = " | <a href='editministrypage.php?id=".$user["username"]."'>Edit your page</a>";
+	$html3 = "<a href='changeaccount.php'>Change your information</a>";
+	$html4 = "<a href='approvemembers.php'>View unapproved members</a>";
+	$html5 = "<a href='createministry.php'>Create a ministry</a>";
+	$html6 = "<a href='editministrypage.php?id=".$user["username"]."'>Edit your page</a>";
 		  
 	if($user["id"] != 0)
 	{
