@@ -47,6 +47,14 @@ float:left;
 padding:20px;
 }
 
+#CMS
+{
+background-color: yellow;
+width: 600px;
+float: right;
+padding: 0px;
+}
+
 #bottom
 {
 /* background-color: blue;*/ 

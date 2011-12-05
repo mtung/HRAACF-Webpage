@@ -27,20 +27,7 @@ require_once("includes/common.php");
 		
 		
 	</head> 
-		<body class="yui-skin-sam"> 
-		  <script type="text/javascript">
-			var myEditor = new YAHOO.widget.Editor('msgpost', {
-			height: '300px',
-			width: '522px',
-			dompath: true //Turns on the bar at the bottom
-			});
-			myEditor.render();
-		  </script>
-		  				
-		  <textarea name="msgpost" id="msgpost" cols="50" rows="10">
-			<strong>Your</strong> HTML <em>code</em> goes here.<br>
-			This text will be pre-loaded in the editor when it is rendered.
-		  </textarea>	
+		<body class="yui-skin-sam"> 	
 			
 		  <?php include_once("identify.php");?>
 		  <?php include_once("userspecificoptions.php");?>
@@ -57,20 +44,28 @@ require_once("includes/common.php");
 		  </div> 
 			
 			<div id="center">
-				<div id="left-side"> 
-				   <?php include_once('includes/navbar.php');?> 
-				</div> 
+			  <div id="left-side"> 
+				<?php include_once('includes/navbar.php');?> 
+			  </div> 
 				
-				<div id="right-side"> 
-					<div class="content" id="home"> 
-					<!-- <?php include('includes/pictureslider.php');?> --> 
-					</div> 
-				</div>
+			  <div id="CMS">
+			    <script type="text/javascript">
+				  var myEditor = new YAHOO.widget.Editor('msgpost', {
+				  height: '300px',
+				  width: '600px',
+				  dompath: true //Turns on the bar at the bottom
+				  });
+				  myEditor.render();
+			    </script>	
+			    <textarea name="msgpost" id="msgpost" cols="50" rows="10">
+				  <strong>Your</strong> HTML <em>code</em> goes here.<br>
+				  This text will be pre-loaded in the editor when it is rendered.
+			    </textarea>
+			  </div>
 			</div>
 			
 			<div id="bottom"> 
-			
-				<?php include_once('includes/footer.php');?>
+			  <?php include_once('includes/footer.php');?>
 			</div> 
 	   </body> 
 </html>
