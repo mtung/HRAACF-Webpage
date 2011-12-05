@@ -11,7 +11,7 @@
 	  redirect("index.php");
 	
 	// find all unapproved members
-	$sql = "SELECT * FROM users WHERE approved = 0 AND id != 0";
+	$sql = "SELECT * FROM users WHERE approved = 1 AND id != 0";
 	$result = mysql_query($sql);
 
 	
@@ -23,7 +23,7 @@
 
   <head>
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <title>Unapproved Members</title>
+    <title>Remove Member</title>
   </head>
 
   <body>

@@ -58,7 +58,7 @@
 		  <td><input name="password2" type="password"></td>
 		</tr>
 		<tr>
-		  <td colspan="2"><input type="submit" value="Register!"></td>
+		  <td colspan="2" align="center"><input type="submit" value="Register!"></td>
 		</tr>
 	  </table>
 	</form>
