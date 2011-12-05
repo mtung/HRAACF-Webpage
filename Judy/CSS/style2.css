@@ -33,7 +33,19 @@ float: left;
 height: 800px; 
 }
 
+<<<<<<< HEAD
 #right-side 
+=======
+#CMS
+{
+background-color: yellow;
+width: 600px;
+float: right;
+padding: 0px;
+}
+
+#bottom
+>>>>>>> 85034694d9a00b274e70f483339771fdf7f980e0
 {
 /* background-color: orange; */  
 width:100px;
