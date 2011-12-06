@@ -15,7 +15,7 @@
   $id = $user["id"];
   $sql = "UPDATE users SET email = '$email' WHERE id ='$id'";
   $result = mysql_query($sql);
-
+  
   // alert user if they cannot change email
   if($result == FALSE)
     apologize("Unable to change email");

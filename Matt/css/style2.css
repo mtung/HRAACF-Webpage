@@ -10,7 +10,7 @@ position: relative;
 }
 
 #wrapper {
-width:1000px;
+width:960px;
 margin-left:auto;
 margin-right:auto;
 }
@@ -26,7 +26,7 @@ height: 800px;
 
 #center 
 {
-width:440px;
+width:400px;
 padding:20px; 
 float: left;  
 height: 800px; 
@@ -40,34 +40,28 @@ height: 800px;
  height: 800px; 
 }
 
-#usernav
+div#usernav
 {
 position:relative; 
 top: 170px; 
-font-family: 'Lato', sans-serif; 
+font-family: 'Antic'; 
 color: #555252;
-font-size: 16pt; 
-text-align: center;
-}
-
-#usernavbar
-{
-font-family: 'Raleway'; 
 font-size: 14pt; 
+text-align: center; 
 }
 
 #CMS
 {
-background-color:yellow;
+background-color: yellow;
 width: 400px;
-float: left;
+float: right;
 padding: 20px;
 height: 800 px
 }
 
 .useroptions
 {
- font-family: 'Lato', sans-serif; 
+ font-family: 'Antic'; 
  font-size: 14pt;
  margin-left: auto; 
  margin-right: auto; 
@@ -75,20 +69,6 @@ height: 800 px
  top: 130px;
  text-align: center;
 }
-
-.useroptions td a {
-color: #055e11;
-text-decoration: none; 
-}
-.useroptions td a:hover {
-color: #6baed1;
-}
-
-.content
-{
-
-}
-
 div#footer
 {
  width: 850px; 
@@ -121,7 +101,7 @@ margin: 0px;
 
 li ul a 
 {
-font-family: 'Lato', sans-serif; 
+font-family: 'Antic'; 
 font-size: 16pt; 
 list-style: none;
 color: #555252;
@@ -139,16 +119,17 @@ text-decoration: none;
 a:hover 
 {
 color: #6baed1;
+text-decoration: none; 
 }
 
 p {
-font-family:'Lato', sans-serif;
+font-family: 'Antic';
 font-size:14px;
 color: #555252; 
 }
 
-h1 {font-family: 'Lato', sans-serif; color: #555252; font-size:36px;}
-h2 {font-family: 'Lato', sans-serif; color: #555252; font-size:24px;}
+h1 {font-family: 'Antic'; color: #555252; font-size:36px;}
+h2 {font-family: 'Antic'; color: #555252; font-size:24px;}
 
 #menu
 {
@@ -181,3 +162,39 @@ ul#menu li ul li a {
 ul#menu li ul li a:hover {
 color: #6baed1; 
 }
+
+.clear { /* generic container (i.e. div) for floating buttons */
+    overflow: hidden;
+    width: 100%;
+}
+
+a.button {
+    color: #444;
+    display: block;
+    float: left;
+    font-family: 'Antic'; 
+    font-size: 9pt; 
+    height: 24px;
+    margin-right: 6px;
+    padding-right: 18px; /* sliding doors padding */
+    text-decoration: none;
+}
+
+a.button span {
+    display: block;
+    line-height: 14px;
+    padding: 5px 0 5px 18px;
+}
+
+a.button:active {
+    background-position: bottom right;
+    color: #000;
+    outline: none; /* hide dotted outline in Firefox */
+}
+
+a.button:active span {
+    background-position: bottom left;
+    padding: 6px 0 4px 18px; /* push text down 1px */
+}
+
+
