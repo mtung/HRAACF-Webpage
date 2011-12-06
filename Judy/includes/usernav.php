@@ -3,17 +3,18 @@
   $html = ", <br>".$user["name"];
   if(($user["id"] != 0) & !empty($user["name"]))
   echo $html 
-  ?><b>!</b> 
-  <p> What would you like to do?</p> 
-  
+  ?>!
+  <b><p>What would you like to do?</p></b> 
+ 
+<div id="usernavbar"> 
  <?
-	$html1 = "<a href='logout.php'>Log Out</a>";
-	$html2 = "<a href='login.php'>Log In</a>";
-	$html3 = "<br><a href='changeaccount.php'>Change your information</a></br>";
-	$html4 = "<a href='approvemembers.php'>View unapproved members</a>";
-	$html5 = "<br><a href='createministry.php'>Create a ministry</a></br></p>";
-	$html6 = "<a href='editministrypage.php?id=".$user["username"]."'>Edit your page</a>";
-	$html7 = "<br><a href='register.php'>Register</a></br>"; 
+	$html1 = "<a href='logout.php' style='color: #055e11; text-decoration: none'>Log Out</a>";
+	$html2 = "<a href='login.php' style='color: #055e11; text-decoration: none'>Log In</a>";
+	$html3 = "<br><a href='changeaccount.php' style='color: #055e11; text-decoration: none'>Change your information</a>";
+	$html4 = "<a href='approvemembers.php' style='color: #055e11; text-decoration: none'>View unapproved members</a>";
+	$html5 = "<br><a href='createministry.php' style='color: #055e11; text-decoration: none'>Create a ministry</a></p>";
+	$html6 = "<a href='editministrypage.php?id=".$user["username"]."' style=' color: #055e11; text-decoration: none'>Edit your page</a>";
+	$html7 = "<br><a href='register.php' style='color: #055e11; text-decoration: none'>Register</a>"; 
 		  
 	if($user["id"] != 0)
 	{
@@ -35,5 +36,4 @@
 	  print($html6);
 	}
 ?>
-
 </div> 
