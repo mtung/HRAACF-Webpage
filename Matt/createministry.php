@@ -14,50 +14,52 @@
 
 <!DOCTYPE html>
 
-<html>
+<html> 
+	<head>
+	<title>HRAACF: Create Ministry</title>
+		<?php include_once("includes/header.php");?> 
+		<script>
+		function validate(f)
+		{
+		  if ((f.username.value == "")||(f.name.value == ""))
+		  {
+			alert("You must fill in all fields.");
+			return false;
+		  }
+		  return true;
+		}   
+		</script>	
+	</head>
 
-  <head>
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <title>Create Ministry</title>
-    <script>
-	function validate(f)
-	{
-	  if ((f.username.value == "")||(f.name.value == ""))
-	  {
-		alert("You must fill in all fields.");
-		return false;
-	  }
-	  return true;
-	}   
-  </script>	
-  </head>
-
-  <body>
-
-    <div id="top">
-      <a href="index.php"><img alt="HRAACF Logo" height="110" src="images/logo.png"></a>
-    </div>
-
-    <div id="middle">
-	  <form action="createministry2.php" method="post" onsubmit="return validate(this);">
-	  <table cellpadding="5">
-	    <tr>
-		  <td>Ministry Username</td>
-		  <td><input name="username" type="text"></td>
-		</tr>
-	    <tr>
-		  <td>Ministry Name</td>
-		  <td><input name="name" type="text"></td>
-		</tr>
-	  </table>
-	  <br><br>
-	  <input type="submit" value="Create Ministry!">
-	  </form>
-    </div>
-
-    <div id="bottom">      
-    </div>
-
-  </body>
-
+	<body>
+		<?php include_once("identify.php");?> 
+		<div id="wrapper">  
+			<div id="left-side"> 
+			   <div id="logo">  
+					<a href="index.php"><img src="images/AACFLogo.png" width="300"/></a> 
+			   </div> 
+			   <?php include_once('includes/navbar.php');?> 
+			   <?php include_once('includes/footer.php');?>
+			</div> 
+			
+			<div id="center"> 
+			<div class="useroptions" id="createministry"> 
+				<form action="createministry2.php" method="post" onsubmit="return validate(this);">
+				<table cellpadding="5">
+				<tr>
+				  <td>Ministry Username</td>
+				  <td><input name="username" type="text"></td>
+				</tr>
+				<tr>
+				  <td>Ministry Name</td>
+				  <td><input name="name" type="text"></td>
+				</tr>
+				</table>
+				<br><br>
+				<input type="submit" value="Create Ministry!">
+				</form>
+			</div>
+			</div> 
+		</div> 	
+	</body>
 </html>

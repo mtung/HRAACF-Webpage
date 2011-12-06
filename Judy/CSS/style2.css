@@ -10,7 +10,7 @@ position: relative;
 }
 
 #wrapper {
-width:960px;
+width:1000px;
 margin-left:auto;
 margin-right:auto;
 }
@@ -26,7 +26,7 @@ height: 800px;
 
 #center 
 {
-width:400px;
+width:440px;
 padding:20px; 
 float: left;  
 height: 800px; 
@@ -40,7 +40,7 @@ height: 800px;
  height: 800px; 
 }
 
-div#usernav
+#usernav
 {
 position:relative; 
 top: 170px; 
@@ -48,6 +48,12 @@ font-family: 'Lato', sans-serif;
 color: #555252;
 font-size: 16pt; 
 text-align: center;
+}
+
+#usernavbar
+{
+font-family: 'Raleway'; 
+font-size: 14pt; 
 }
 
 #CMS
@@ -69,6 +75,17 @@ height: 800 px
  top: 130px;
  text-align: center;
 }
+
+.useroptions td a {
+color: #055e11;
+text-decoration: none; 
+}
+.useroptions td a:hover {
+color: #6baed1;
+}
+
+
+
 div#footer
 {
  width: 850px; 
@@ -119,7 +136,6 @@ text-decoration: none;
 a:hover 
 {
 color: #6baed1;
-text-decoration: none; 
 }
 
 p {
@@ -162,39 +178,3 @@ ul#menu li ul li a {
 ul#menu li ul li a:hover {
 color: #6baed1; 
 }
-
-.clear { /* generic container (i.e. div) for floating buttons */
-    overflow: hidden;
-    width: 100%;
-}
-
-a.button {
-    color: #444;
-    display: block;
-    float: left;
-    font-family: 'Lato', sans-serif; 
-    font-size: 9pt; 
-    height: 24px;
-    margin-right: 6px;
-    padding-right: 18px; /* sliding doors padding */
-    text-decoration: none;
-}
-
-a.button span {
-    display: block;
-    line-height: 14px;
-    padding: 5px 0 5px 18px;
-}
-
-a.button:active {
-    background-position: bottom right;
-    color: #000;
-    outline: none; /* hide dotted outline in Firefox */
-}
-
-a.button:active span {
-    background-position: bottom left;
-    padding: 6px 0 4px 18px; /* push text down 1px */
-}
-
-

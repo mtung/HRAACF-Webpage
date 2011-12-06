@@ -18,44 +18,45 @@
 ?>
 
 <!DOCTYPE html>
-
 <html>
-
   <head>
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <title>Remove Member</title>
+    <title>HRAACF: Remove Member</title>
+    <?php include_once("includes/header.php");?> 
   </head>
 
-  <body>
-
-    <div id="top">
-      <a href="index.php"><img alt="HRAACF Logo" height="110" src="images/logo.png"></a>
-    </div>
-
-    <div id="middle">
-	  <form action="approvemembers2.php" method="post">
-	  <table cellpadding="5">
-	    <tr>
-		  <td align=left>Name</td>
-		  <td align=left>Email</td>
-		  <td align=left>Approve</td>
-		</tr>
-		<? while($unapproved = mysql_fetch_array($result)):?>
-		<tr>
-		  <td align=left><? echo $unapproved["name"] ?></td>
-		  <td align=left><? echo $unapproved["email"] ?></td>
-		  <td> <input name="<?echo $unapproved["id"]?>" type="checkbox"></td>
-		</tr>
-		<? endwhile; ?>
-	  </table>
-	  <br><br>
-	  <input type="submit" value="Approve!">
-	  </form>
-    </div>
-
-    <div id="bottom">      
-    </div>
-
-  </body>
-
+	<body>
+		<?php include_once("identify.php");?> 
+		<div id="wrapper">  
+			<div id="left-side"> 
+			   <div id="logo">  
+					<a href="index.php"><img src="images/AACFLogo.png" width="300"/></a> 
+			   </div> 
+			   <?php include_once('includes/navbar.php');?> 
+			   <?php include_once('includes/footer.php');?>
+			</div> 
+			
+			<div id="center"> 
+			<div class="useroptions" id="removemembers"> 
+			  <form action="approvemembers2.php" method="post">
+				  <table cellpadding="5">
+					<tr>
+					  <td align=left>Name</td>
+					  <td align=left>Email</td>
+					  <td align=left>Approve</td>
+					</tr>
+					<? while($unapproved = mysql_fetch_array($result)):?>
+					<tr>
+					  <td align=left><? echo $unapproved["name"] ?></td>
+					  <td align=left><? echo $unapproved["email"] ?></td>
+					  <td> <input name="<?echo $unapproved["id"]?>" type="checkbox"></td>
+					</tr>
+					<?endwhile;?>
+				   </table>
+				   <br><br>
+				   <input type="submit" value="Approve!">
+			  </form>
+			</div>
+    		</div>
+    	</div> 	
+	</body>
 </html>
