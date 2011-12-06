@@ -2,13 +2,15 @@
 
   // require common code
   require_once("includes/common.php");
+  require_once("identify.php");
 
   // if guest manages to get here, redirect them to homepage
   if($user["id"] == 0)
     redirect("index.php");
   
   // check that old password is correct
-  $sql = "SELECT * FROM users WHERE users.id = ".$_SESSION["id"];
+  $id = $_SESSION["id"];  
+  $sql = "SELECT * FROM users WHERE id = '$id'";
   $result = mysql_query($sql);
   $row = mysql_fetch_array($result);
   $old = crypt($_POST["old"], $row["hash"]);
@@ -19,7 +21,6 @@
   $hash = crypt($_POST["new"]);
 
   // ...then change the hashed value of password
-  $id = $_SESSION["id"];
   $sql = "UPDATE users SET hash = '$hash' WHERE id ='$id'";
   $result = mysql_query($sql);
 

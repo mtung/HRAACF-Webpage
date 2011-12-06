@@ -47,7 +47,7 @@
 			<div id="center"> 
 			<div class="useroptions" id="login"> 
 				<h1>Change Email</h1> 
-				<form>
+				<form action="changeemail2.php" method="post" onsubmit="return validate(this);">
 				<center> 
 				<table>
 				  <tr>
