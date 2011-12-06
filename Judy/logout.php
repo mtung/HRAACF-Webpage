@@ -6,6 +6,6 @@
     // log out current user, if any
     logout();
 	
-	redirect("login.php");
+	redirect("index.php");
 
 ?>
