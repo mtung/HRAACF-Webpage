@@ -1,9 +1,9 @@
 <div id="usernav">
-  Welcome<?  
+  <b>Welcome</b><?  
   $html = ", <br>".$user["name"];
   if(($user["id"] != 0) & !empty($user["name"]))
   echo $html 
-  ?>
+  ?><b>!</b> 
   <p> What would you like to do?</p> 
   
  <?
