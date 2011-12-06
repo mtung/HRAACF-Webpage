@@ -1,4 +1,3 @@
-
 <ul id="menu" class="menu collapsible" > 
 		<li><a href="index.php">Home</a></li>
 		<li><a href="#">About Us</a>
@@ -12,7 +11,6 @@
 				<? include("listministries.php");?>
 			</ul>
 		</li> 					
-		<li><a href="discuss.php">Discuss</a></li> 
 		<li><a href="announcements.php">Announcements</a></li> 
 		<li><a href="resources.php">Resources</a></li>
 		<li>Pictures</li>
