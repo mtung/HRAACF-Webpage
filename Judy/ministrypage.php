@@ -32,8 +32,10 @@
 			   <?php include_once('includes/footer.php');?>
 			</div> 
 			
-			<div id="center"> 
-				<? echo $row["webpage"] ?>
+			<div id="center">
+				<div class="useroptions" id="changeaccount"> 
+					<? echo $row["webpage"] ?>
+				</div>
 			</div> 
 			
 			<div id="right-side"> 
