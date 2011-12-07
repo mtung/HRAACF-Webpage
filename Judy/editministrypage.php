@@ -138,7 +138,6 @@
 						myEditor.render();
 					})();
 				</script>
-				<button type="button" id="toggleEditor">Toggle Editor</button>
 				<form method="post" action="editministrypage2.php" id="form1">
 					<textarea id="editor" name="editor" rows="20" cols="75">
 						<? echo $webpage["webpage"] ?>

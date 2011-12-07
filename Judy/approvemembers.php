@@ -14,7 +14,6 @@
 	$sql = "SELECT * FROM users WHERE approved = 0 AND id != 0";
 	$result = mysql_query($sql);
 
-	
 ?>
 
 <!DOCTYPE html>
@@ -25,7 +24,6 @@
 		<?php include_once("includes/header.php");?> 
 	</head>
 	<body> 
-	<?php include_once("identify.php");?> 
 		<div id="wrapper">  
 		
 			<div id="left-side"> 
@@ -41,10 +39,10 @@
 			  <form action="approvemembers2.php" method="post">
 			  <table cellpadding="8">
 				<tr>
-				  <th align=left>Username</td>
-				  <th align=left>Name</td>
-				  <th align=left>Email</td>
-				  <th align=left>Approve?</td>
+				  <th align=left>Username</th>
+				  <th align=left>Name</th>
+				  <th align=left>Email</th>
+				  <th align=left>Approve?</th>
 				</tr>
 				<? while($unapproved = mysql_fetch_array($result)):?>
 				<tr>
