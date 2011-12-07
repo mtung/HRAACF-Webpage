@@ -56,8 +56,8 @@
 							Event = YAHOO.util.Event;
 						
 						var myConfig = {
-							height: '300px',
-							width: '400px',
+							height: '250px',
+							width: '440px',
 							animate: true,
 							dompath: true,
 							focusAtStart: true
