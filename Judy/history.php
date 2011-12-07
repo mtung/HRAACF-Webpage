@@ -5,6 +5,7 @@ require_once("includes/common.php");
 ?> 
 
 <!DOCTYPE html>
+<!-- Sets up HRAACF History page (static) --> 
 <html>	
 	<head>
 		<title>HRAACF: History</title>
@@ -18,7 +19,6 @@ require_once("includes/common.php");
 			   <?php include_once('includes/navbar.php');?> 
 			   <?php include_once('includes/footer.php');?>
 			</div> 
-			
 			<div id="center"> 
 			<div class="content" id="history"> 
 				<h1>History</h1> 
@@ -27,7 +27,6 @@ require_once("includes/common.php");
 				</div> 
 			</div>
 			</div>
-			
 			<div id="right-side"> 
 				<?php include_once('includes/usernav.php');?> 
 			</div>

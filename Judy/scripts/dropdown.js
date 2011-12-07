@@ -1,3 +1,5 @@
+// javascript function written by Marco van Hylckama Vlieg (weblog: http://www.i-marco.nl/weblog/) 
+
 startList = function() {
 if (document.all&&document.getElementById) {
 navRoot = document.getElementById("nav");

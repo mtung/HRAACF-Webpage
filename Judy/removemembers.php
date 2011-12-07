@@ -31,7 +31,6 @@
 			   <?php include_once('includes/navbar.php');?> 
 			   <?php include_once('includes/footer.php');?>
 			</div> 
-			
 			<div id="center"> 
 			<div class="useroptions" id="removemembers"> 
 			  <form action="approvemembers2.php" method="post">

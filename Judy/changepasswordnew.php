@@ -6,8 +6,13 @@
   ?>
 
 <!DOCTYPE html>
+<!-- allows user to change his/her password --> 
 <html>
 	<head>
+		<title>HRAACF: Change Password</title>
+		<?php include_once("includes/header.php");?> 
+		
+		<!-- performs various checks to ensure that values for old password and new password are valid. --> 
 		<script>
 			function validate(f)
 			{
@@ -34,9 +39,6 @@
 			  return true;
 			}   
 		</script>
-		
-		<title>HRAACF: Change Password</title>
-		<?php include_once("includes/header.php");?> 
 	</head>
 
 	<body>
@@ -46,34 +48,32 @@
 			   <?php include_once('includes/navbar.php');?> 
 			   <?php include_once('includes/footer.php');?>
 			</div> 
-			
 			<div id="center"> 
 			<div class="useroptions" id="changepassword"> 
 				<h1>Change Password</h1> 
 				<form action="changepasswordnew2.php" method="post"  onsubmit="return validate(this);">
 				<center> 
 				<table> 
-				<tr> 
-					<td>Old Password: <input name="old" type="password"></td> 
-				</tr> 
-				<tr> 
-					<td>New Password: <input name="new" type="password"></td> 
-				</tr>
-				<tr> 
-					<td>Re-type Password: <input name="new2" type="password"></td> 
-				</tr>
-				<tr> 
-					<td colspan="2" align="center"><input type="submit" value="Change Password"></td> 
-				</tr> 
+					<tr> 
+						<td>Old Password: <input name="old" type="password"></td> 
+					</tr> 
+					<tr> 
+						<td>New Password: <input name="new" type="password"></td> 
+					</tr>
+					<tr> 
+						<td>Re-type Password: <input name="new2" type="password"></td> 
+					</tr>
+					<tr> 
+						<td colspan="2" align="center"><input type="submit" value="Change Password"></td> 
+					</tr> 
 				</table>
 				</center> 
 				</form> 
 				<p> <a href="changeaccount.php">go back</a></p> 
 			</div>	
 			</div> 
-			
 			<div id="right-side"> 
-					<?php include_once('includes/usernav.php');?> 
+				<?php include_once('includes/usernav.php');?> 
 			</div>
 		</div> 	
 	</body>

@@ -19,7 +19,7 @@
 <!DOCTYPE html>
 <html>	
 	<head>
-		<title>Harvard-Radcliffe Asian American Christian Fellowship</title>
+		<title>HRAACF: Edit Ministry Page</title>
 		<? include_once("includes/header.php") ?>
 		
 		<!-- Skin CSS file -->
@@ -39,14 +39,12 @@
 	<body> 
 		<?php include_once("identify.php");?> 
 		<div id="wrapper">
-		
 			<div id="left-side"> 
 			   <?php include_once('includes/navbar.php');?> 
 			   <?php include_once('includes/footer.php');?>
 			</div> 
 			
-			
-			<div class="useroptions" id="changeaccount">
+			<div class="useroptions" id="editministry">
 			  <div id="center" class="yui-skin-sam" >
 				<script type="text/javascript">
 					
@@ -151,15 +149,11 @@
 				</form>
 			  </div>
 			</div> 
-			
 			<div id="right-side"> 
 				<?php include_once('includes/usernav.php');?> 
 			</div>
-			
 		</div>
-		
-	</body> 
-	
+	</body>
 </html>
 			
 	

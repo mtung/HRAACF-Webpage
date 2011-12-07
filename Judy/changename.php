@@ -6,12 +6,13 @@
 
   ?>
 
-<!DOCTYPE html>
-
+<!DOCTYPE html> 
 <html>
 	<head>
 		<title>HRAACF: Change Name</title>
 		<?php include_once("includes/header.php");?> 
+		
+		<!-- ensures that user has typed a valid input --> 
 		<script>
 			function validate(f)
 			{
@@ -32,7 +33,6 @@
 			   <?php include_once('includes/navbar.php');?> 
 			   <?php include_once('includes/footer.php');?>
 			</div> 
-			
 			<div id="center"> 
 			<div class="useroptions" id="changename"> 
 				<h1>Change Name</h1> 
@@ -52,9 +52,8 @@
 				<p> <a href="changeaccount.php">go back</a></p> 
 			</div>	
 			</div> 
-			
 			<div id="right-side"> 
-					<?php include_once('includes/usernav.php');?> 
+				<?php include_once('includes/usernav.php');?> 
 			</div>
 		</div> 	
 	</body>

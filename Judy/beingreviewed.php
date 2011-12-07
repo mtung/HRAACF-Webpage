@@ -6,7 +6,7 @@
 ?>
 
 <!DOCTYPE html>
-
+<!-- informs newly registered users of successful registration and pending exec approval--> 
 <html>
 	<head>
 		<title>HRAACF: Under Review</title>
@@ -20,7 +20,6 @@
 			   <?php include_once('includes/navbar.php');?> 
 			   <?php include_once('includes/footer.php');?>
 			</div> 
-			
 			<div id="center"> 
 			<div class="useroptions" id="review"> 
 				<h2>Thank you for registering! Your application has been sent to HRAACF Exec for review.</h2>
@@ -28,7 +27,6 @@
 				<a href="index.php">Return to HRAACF Home</a>
 			</div>
 			</div> 
-			
 			<div id="right-side"> 
 				<?php include_once('includes/usernav.php');?> 
 			</div>

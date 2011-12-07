@@ -1,11 +1,12 @@
+<!-- welcomes user personally if logged in --> 
 <div id="usernav">
   <b>Welcome</b><?  
   $html = "<br>".$user["name"];
   if(($user["id"] != 0) & !empty($user["name"]))
   echo $html 
   ?>!
-  
- 
+
+<!-- gives user specific options based on user type (i.e. normal users only get 'log out' and 'change info' options) -->   
 <div id="usernavbar"> 
  <?
 	$html1 = "<br><a href='logout.php' style='color: #055e11; text-decoration: none'>Log Out</a>";

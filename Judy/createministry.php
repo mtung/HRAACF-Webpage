@@ -12,12 +12,14 @@
 	
 ?>
 
-<!DOCTYPE html>
-
+<!DOCTYPE html> 
+<!-- allows exec members to create new ministries by submitting to a PHP form--> 
 <html>
 	<head>
 		<title>HRAACF: Log In</title>
 		<?php include_once("includes/header.php");?> 
+		
+		<!-- ensures that user has typed valid inputs --> 
 		<script>
 		function validate(f)
 		{
@@ -34,12 +36,10 @@
 	<body>
 		<?php include_once("identify.php");?> 
 		<div id="wrapper">  
-		
 			<div id="left-side"> 
 			   <?php include_once('includes/navbar.php');?> 
 			   <?php include_once('includes/footer.php');?>
 			</div> 
-			
 			<div id="center"> 
 				<div class="useroptions" id="login"> 
 				  <form action="createministry2.php" method="post" onsubmit="return validate(this);">
@@ -58,7 +58,6 @@
 				  </form>
 				</div>
 			</div>
-			
 			<div id="right-side"> 
 				<?php include_once('includes/usernav.php');?> 
 			</div>

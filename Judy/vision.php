@@ -5,9 +5,10 @@ require_once("includes/common.php");
 ?> 
 
 <!DOCTYPE html>
+<!-- Sets up HRAACF Vision page (static) --> 
 <html>	
 	<head>
-		<title>HRAACF: Vision</title>
+		<title>HRAACF: Our Vision</title>
 		<?php include_once("includes/header.php");?> 
 	</head> 
 	
@@ -18,7 +19,6 @@ require_once("includes/common.php");
 			   <?php include_once('includes/navbar.php');?> 
 			   <?php include_once('includes/footer.php');?>
 			</div> 
-			
 			<div id="center"> 
 			<div class="content" id="vision"> 
 				<h1>Our Vision</h1> 
@@ -27,7 +27,6 @@ require_once("includes/common.php");
 				<p>To know God, and to make God known.</p> 
 			</div>
 			</div>
-			
 			<div id="right-side"> 
 				<?php include_once('includes/usernav.php');?> 
 			</div>

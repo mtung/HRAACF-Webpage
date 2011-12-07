@@ -8,8 +8,10 @@
 	$sql = "SELECT * FROM users WHERE ministry != 0 and ministry != 1";
 	$result = mysql_query($sql);
 	
-	// Loop through ministires, printing HTML for the navbar
+	// Loop through ministries, printing HTML for the navbar
 	while($current = mysql_fetch_array($result)):
 ?>
+
+<!--Links created for each ministry page, print relevant HTMl for navbar--> 
 <li><a href="ministrypage.php?id=<?echo $current["username"]?>"><?echo $current["name"]?></a></li>
 <? endwhile ?>

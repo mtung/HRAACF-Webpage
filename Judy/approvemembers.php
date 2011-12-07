@@ -17,20 +17,20 @@
 ?>
 
 <!DOCTYPE html>
-
 <html>
 	 <head>
    		<title>HRAACF: Approve Members</title>
 		<?php include_once("includes/header.php");?> 
 	</head>
+	
 	<body> 
 		<div id="wrapper">  
-		
 			<div id="left-side"> 
 			   <?php include_once('includes/navbar.php');?> 
 			   <?php include_once('includes/footer.php');?>
 			</div> 
 			
+			<!-- grabs unapproved members in the SQL database and displays them for exec approval --> 
 			<div id="center"> 
 				<div class="useroptions" id="approvemembers"> 
 				  <form action="approvemembers2.php" method="post">
@@ -40,7 +40,7 @@
 						  <th align=left>Name</th>
 						  <th align=left>Email</th>
 						  <th align=left>Approve?</th>
-						</tr>
+						</tr> 
 						<? while($member = mysql_fetch_array($unapproved)):?>
 						<tr>
 						  <td align=left><? echo $member["username"] ?></td>
@@ -55,7 +55,6 @@
 				  </form>
 				</div>
 			</div>
-			
 			<div id="right-side"> 
 				<?php include_once('includes/usernav.php');?> 
 			</div>

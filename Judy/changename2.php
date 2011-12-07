@@ -23,6 +23,4 @@
   // redirect to home page
   redirect("changeaccount.php");
 
-
-
 ?>

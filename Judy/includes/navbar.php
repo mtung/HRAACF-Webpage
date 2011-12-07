@@ -1,3 +1,6 @@
+<!--HRAACF logo, main navigation bar with a customizable ministry list, 
+utilizes a jquery collapsible accordion menu whose script is included in the header--> 
+
 <div id="logo">  
 	<a href="index.php"><img src="images/AACFLogo.png" width="230"/></a> 
 </div>
