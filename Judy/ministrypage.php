@@ -4,10 +4,10 @@
 	require_once("includes/common.php");
 
 	// this webpage is always passed the username of the ministry
-	$ministry = $_GET["id"];
+	$username = $_GET["id"];
 	
 	// use SQL query to pull the HTML from the 'pages' table
-	$sql = "SELECT * FROM pages WHERE username = '$ministry'";
+	$sql = "SELECT * FROM pages WHERE username = '$username'";
 	$result = mysql_query($sql);
 	if($result==FALSE)
 	  apologize("Page currently unavailable!");

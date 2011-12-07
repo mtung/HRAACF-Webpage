@@ -32,7 +32,7 @@
 		<script src="http://yui.yahooapis.com/2.9.0/build/menu/menu-min.js"></script>
 		<script src="http://yui.yahooapis.com/2.9.0/build/button/button-min.js"></script>
 		<!-- Source file for Rich Text Editor-->
-		<script src="http://yui.yahooapis.com/2.9.0/build/editor/editor-min.js"></script>		
+		<script src="http://yui.yahooapis.com/2.9.0/build/editor/editor-min.js"></script>
 	</head> 
 	
 	<body> 
@@ -49,6 +49,7 @@
 			  <div id="center" class="yui-skin-sam" >
 				<script type="text/javascript">
 					(function() {
+					
 						var Dom = YAHOO.util.Dom,
 							Event = YAHOO.util.Event;
 						
@@ -67,6 +68,8 @@
 						var myEditor = new YAHOO.widget.Editor('editor', myConfig);
 						myEditor.on('toolbarLoaded', function()
 						{
+							document.getElementById('webpage').style.visibility = "hidden";							
+							document.getElementById('webpage').value = myEditor.get('element').value;
 							var codeConfig =
 							{
 								type: 'push', label: 'Submit HTML Code', value: 'editcode'
@@ -78,9 +81,12 @@
 							{
 								var ta = this.get('element'),
 									iframe = this.get('iframe').get('element');
+								
+								console.log(myEditor.get('element').value);
 
 								if (state == 'on')
 								{
+									document.getElementById('webpage').value = myEditor.get('element').value;								
 									state = 'off';
 									this.toolbar.set('disabled', false);
 									YAHOO.log('Show the Editor', 'info', 'example');
@@ -97,6 +103,7 @@
 								} 
 								else
 								{
+									document.getElementById('webpage').value = myEditor.get('element').value;									
 									state = 'on';
 									YAHOO.log('Show the Code Editor', 'info', 'example');
 									this.cleanHTML();
@@ -137,6 +144,8 @@
 					<textarea id="editor" name="editor" rows="20" cols="75">
 						<? echo $webpage["webpage"] ?>
 					</textarea>
+					<input name="webpage" type="text" id="webpage"><br>
+					<input type="submit" value="Update Page!" onsubmit="return validate(this);">
 				</form>
 			  </div>
 			</div> 
