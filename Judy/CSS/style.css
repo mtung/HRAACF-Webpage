@@ -1,165 +1,50 @@
-body
-{
-margin:0px;
-}
+/* Master Style Sheet */ 
 
-#logo
-{
-position: relative; 
-}
+body {margin:0px;}
 
+/* set general css properties */ 
+p {font-family:'Lato', sans-serif; font-size:14px; color: #555252; }
+h1 {font-family: 'Lato', sans-serif; color: #555252; font-size:36px;}
+h2 {font-family: 'Lato', sans-serif; color: #555252; font-size:24px;}
+
+/*centered wrapper div to contain left, center, right side that fits in 960 grid */ 
 #wrapper {
 width:960px;
 margin-left:auto;
 margin-right:auto;
 }
 
-#left-side
-{
+/* contains nav bar and logo */
+#left-side {
+float: left;
 width:200px;
-float: left; 
 padding:20px;
 clear:left; 
-height: 800px; 
+height:800px; 
 }
 
-#center 
-{
+/* contains content or useroptions */
+#center {
+float:left; 
 width:450px;
 padding:20px; 
-float: left;  
-height: 800px; 
+height:800px; 
 }
 
-#right-side 
-{
- width: 160px; 
+/* contains usernav and usernavbar */ 
+#right-side {
  float:left; 
- padding: 20px; 
- height: 800px; 
-}
-
-#usernav
-{
-text-align: right;
-position:relative; 
-top: 15px; 
-font-family: 'Lato', sans-serif; 
-color: #555252;
-font-size: 16pt; 
-}
-
-#usernavbar
-{
-text-align: right;
-font-family: 'Raleway'; 
-font-size: 14pt; 
-}
-
-.useroptions
-{
- font-family: 'Lato', sans-serif; 
- font-size: 14pt;
- margin-left: auto; 
- margin-right: auto; 
- position: relative; 
- top: 130px;
- text-align: center;
-}
-
-#approvemembers
-{
- font-size: 10pt;
-}
-
-#CMS
-{
- font-family: 'Lato', sans-serif; 
- font-size: 14pt;
- margin-left: auto; 
- margin-right: auto; 
- position: relative; 
- top: 130px;
- text-align: center;
-}
-
-.useroptions td a {
-color: #055e11;
-text-decoration: none; 
-}
-.useroptions td a:hover {
-color: #6baed1;
-}
-
-.content
-{
+ width:150px; 
  padding:20px; 
- position:relative; 
- top:90px; 
+ height:800px; 
 }
 
-div#footer
-{
- width: 850px; 
- position: relative; 
- padding: 20px; 
- padding-top: 700px;
- display: block;
+
+#logo {
+position: relative; 
 }
 
-p#footer 
-{
-font-size:8pt; 
-text-align:center; 
-}
-
-ul
-{
-padding: 0px; 
-margin: 0px; 
-}
-
-li
-{
-font-family: 'Raleway';
-font-size: 20pt; 
-list-style: none; 
-color: #055e11;
-padding: 0px; 
-margin: 0px; 
-}
-
-li ul a 
-{
-font-family: 'Lato', sans-serif; 
-font-size: 16pt; 
-list-style: none;
-color: #555252;
-padding: 3px 3px 3px 15px;; 
-margin: 0px;
-display: block;
-text-decoration: none;
-}
-
-ul li a 
-{
-text-decoration: none;
-}
-
-a:hover 
-{
-color: #6baed1;
-}
-
-p {
-font-family:'Lato', sans-serif;
-font-size:14px;
-color: #555252; 
-}
-
-h1 {font-family: 'Lato', sans-serif; color: #555252; font-size:36px;}
-h2 {font-family: 'Lato', sans-serif; color: #555252; font-size:24px;}
-
+/* nav bar CSS, adapted from Marco van Hylckama Vlieg */ 
 #menu
 {
  position: relative; 
@@ -192,6 +77,25 @@ ul#menu li ul li a:hover {
 color: #6baed1; 
 }
 
+/* content div, contains static content, in center div */  
+.content {
+ padding:15px; 
+ position:relative; 
+ top:90px; 
+}
+
+/* Content Management System div in center div */ 
+#CMS {
+ font-family: 'Lato', sans-serif; 
+ font-size: 14pt;
+ margin-left: auto; 
+ margin-right: auto; 
+ position: relative; 
+ top: 130px;
+ text-align: center;
+}
+
+/* YUI 2 CSS, from Yahoo Developer's Portal, used for CMS */ 
 .yui-skin-sam .yui-toolbar-container .yui-toolbar-editcode span.yui-toolbar-icon 
 {
     background-image: url( assets/html_editor.gif );
@@ -218,3 +122,95 @@ textarea {
     margin: 0;
     padding: 0;
 }
+
+/* useroptions div in center div (navigate to using right-side usernavbar) */ 
+.useroptions {
+ font-family: 'Lato', sans-serif; 
+ font-size: 14pt;
+ margin-left: auto; 
+ margin-right: auto; 
+ position: relative; 
+ top: 130px;
+ text-align: center;
+}
+
+/* stylizes links in tables within useroptions div */ 
+.useroptions td a {
+color: #055e11;
+text-decoration: none; 
+}
+
+.useroptions td a:hover {
+color: #6baed1;
+}
+
+/* right-side usernav */ 
+#usernav {
+position:relative; 
+top:15px; 
+font-family:'Lato', sans-serif; 
+color:#555252;
+font-size:16pt; 
+text-align: right;
+}
+
+/* right-side usernavbar */
+#usernavbar {
+text-align: right;
+font-family: 'Raleway'; 
+font-size: 14pt; 
+}
+
+/* footer div */ 
+div#footer {
+ width: 850px; 
+ position: relative; 
+ padding: 20px; 
+ padding-top: 700px;
+ display: block;
+}
+
+/* stylizing footer font */
+p#footer {
+font-size:8pt; 
+text-align:center; 
+}
+
+/* font size for approve members table */ 
+#approvemembers {
+ font-size: 10pt;
+}
+
+/* stylizing unordered lists, ordered lists, etc., mainly used for navbar */ 
+ul {
+padding: 0px; 
+margin: 0px; 
+}
+
+li {
+font-family: 'Raleway';
+font-size: 20pt; 
+list-style: none; 
+color: #055e11;
+padding: 0px; 
+margin: 0px; 
+}
+
+li ul a {
+font-family: 'Lato', sans-serif; 
+font-size: 16pt; 
+list-style: none;
+color: #555252;
+padding: 3px 3px 3px 15px;; 
+margin: 0px;
+display: block;
+text-decoration: none;
+}
+
+ul li a {
+text-decoration: none;
+}
+
+/* set hover color for links */ 
+a:hover {color: #6baed1;}
+

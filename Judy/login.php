@@ -14,6 +14,7 @@
 
 <!DOCTYPE html>
 <html>	
+<!--sets up login form for users-->
 	<head>
 		<title>HRAACF: Log In</title>
 		<?php include_once("includes/header.php");?> 
@@ -21,12 +22,10 @@
 		<body> 
 			<?php include_once("identify.php");?> 
 			<div id="wrapper">  
-			
 				<div id="left-side"> 
 				   <?php include_once('includes/navbar.php');?> 
 				   <?php include_once('includes/footer.php');?>
 				</div> 
-				
 				<div id="center"> 
 				<div class="useroptions" id="login"> 
 					<h1>Log In</h1> 
@@ -49,7 +48,6 @@
       				</form>
 				</div>
 				</div> 
-				
 				<div id="right-side"> 
 					<?php include_once('includes/usernav.php');?> 
 				</div>

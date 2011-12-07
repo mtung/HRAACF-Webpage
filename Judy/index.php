@@ -5,6 +5,7 @@ require_once("includes/common.php");
 ?> 
 
 <!DOCTYPE html>
+<!--Home Page divided into three vertical divs wrapped in one large div; makes use of php includes to set up logo, navbar, usernavbar, footer, and identify the user for every page.--> 
 <html>	
 	<head>
 		<title>Harvard-Radcliffe Asian American Christian Fellowship</title>
@@ -20,7 +21,7 @@ require_once("includes/common.php");
 			
 			<div id="center"> 
 			<div class="content" id="home"> 
-				<!-- <?php include('includes/pictureslider.php');?> --> 
+				<center><h1>Welcome to the Harvard-Radcliffe Asian American Christian Fellowship's Website!</h1></center> 
 			</div>
 			</div> 
 			

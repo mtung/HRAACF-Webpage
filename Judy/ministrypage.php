@@ -16,9 +16,10 @@
 ?>
 
 <!DOCTYPE html>
+<!--generates ministry pages, passed a value of username to look up HTML in "pages" SQL table--> 
 <html>	
 	<head>
-		<title>Harvard-Radcliffe Asian American Christian Fellowship</title>
+		<title>HRAACF: Ministry Pages</title>
 		<?php include_once("includes/header.php");?> 
 	</head> 
 	<body> 
