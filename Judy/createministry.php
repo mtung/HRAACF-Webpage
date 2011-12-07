@@ -61,6 +61,10 @@
 				  </form>
 				</div>
 			</div>
+			
+			<div id="right-side"> 
+				<?php include_once('includes/usernav.php');?> 
+			</div>
 		</div>
   </body>
 </html>
