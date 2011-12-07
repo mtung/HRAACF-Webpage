@@ -33,7 +33,7 @@
 			</div> 
 			
 			<div id="center">
-				<div class="useroptions" id="changeaccount"> 
+				<div class="content" id="ministrypage"> 
 					<? echo $row["webpage"] ?>
 				</div>
 			</div> 

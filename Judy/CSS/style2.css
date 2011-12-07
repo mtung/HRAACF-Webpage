@@ -76,6 +76,17 @@ height: 800 px
  text-align: center;
 }
 
+#CMS
+{
+ font-family: 'Lato', sans-serif; 
+ font-size: 14pt;
+ margin-left: auto; 
+ margin-right: auto; 
+ position: relative; 
+ top: 130px;
+ text-align: center;
+}
+
 .useroptions td a {
 color: #055e11;
 text-decoration: none; 
@@ -180,4 +191,31 @@ ul#menu li ul li a {
 
 ul#menu li ul li a:hover {
 color: #6baed1; 
+}
+
+.yui-skin-sam .yui-toolbar-container .yui-toolbar-editcode span.yui-toolbar-icon 
+{
+    background-image: url( assets/html_editor.gif );
+    background-position: 0 1px;
+    left: 5px;
+}
+
+.yui-skin-sam .yui-toolbar-container .yui-button-editcode-selected span.yui-toolbar-icon 
+{
+    background-image: url( assets/html_editor.gif );
+    background-position: 0 1px;
+    left: 5px;
+}
+
+.editor-hidden {
+    visibility: hidden;
+    top: -9999px;
+    left: -9999px;
+    position: absolute;
+}
+
+textarea {
+    border: 0;
+    margin: 0;
+    padding: 0;
 }

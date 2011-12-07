@@ -34,9 +34,7 @@
 		<script src="http://yui.yahooapis.com/2.9.0/build/menu/menu-min.js"></script>
 		<script src="http://yui.yahooapis.com/2.9.0/build/button/button-min.js"></script>
 		<!-- Source file for Rich Text Editor-->
-		<script src="http://yui.yahooapis.com/2.9.0/build/editor/editor-min.js"></script>
-		
-		
+		<script src="http://yui.yahooapis.com/2.9.0/build/editor/editor-min.js"></script>		
 	</head> 
 	
 	<body> 
@@ -45,21 +43,22 @@
 		
 			<div id="left-side"> 
 			   <div id="logo">  
-					<!-- <a href="index.php"><img src="images/AACFLogo.png" width="300"/></a> -->
+					<a href="index.php"><img src="images/AACFLogo.png" width="300"/></a>
 			   </div> 
 			   <?php include_once('includes/navbar.php');?> 
 			   <?php include_once('includes/footer.php');?>
 			</div> 
 			
 			
-			<div id="center" class="yui-skin-sam">
+			<div class="useroptions" id="changeaccount">
+			  <div id="center" class="yui-skin-sam" >
 				<script type="text/javascript">
 					(function() {
 						var Dom = YAHOO.util.Dom,
 							Event = YAHOO.util.Event;
 						
 						var myConfig = {
-							height: '300px',
+							height: '600px',
 							width: '400px',
 							animate: true,
 							dompath: true,
@@ -145,6 +144,7 @@
 						<? echo $webpage["webpage"] ?>
 					</textarea>
 				</form>
+			  </div>
 			</div> 
 			
 			<div id="right-side"> 
