@@ -1,0 +1,26 @@
+Submission: CS 50 Final Project
+Collaborators: Matthew Tung and Judy Park
+
+Documentation:
+
+The Harvard Radcliffe Asian American Fellowship is a Christian fellowship on Harvard campus. Our project seeks to create a website that will fully meet the needs of the fellowship's website needs
+while being fully controllable with zero knowledge of HTML, PHP, or JavaScript. The experience and interaction with our website is divided into three principle parts. The fellowship has an executive body
+called exec that has certain control over the website. Next, the fellowship has several groups called ministries that have different options available to them. Finally, general members of the Harvard
+community can sign up for accounts on the webpage.
+
+The webpage itself makes use of HTML and PHP (along with a bit of JavaScript for form verification) to create a hopefully smooth user experience. Anyone can access the webpage to view its data, but special
+options are available to leaders of the HRAACF organization and to registered members. Registered members can login and record their name and email. Users can also change the emails that they originally
+supplied. Further additions to the webpage could include a forum where registered (and approved) members of the website can discuss issues, the ability to sign up for email lists on the webpage, and user
+pages containing biographies and contact information. The website contains basic, static pages describing the vision and history of the group as well as some announcements and a few pictures. The Get Involved
+tab also shows information about the fellowship's various ministries.
+
+The executive committee has the most control over the page. When general members register for accounts, they are given temporary, unapproved accounts that have full access to the information of the webpage
+but can be restricted from accessing (though this is not a part of our project) a forum or discussion board. Exec, once logged in under their account name (Exec, HRAACF), can view all registered but
+unapproved members and choose which to approve. Next, under the dropdown tab "Get Involved" there is a list of every ministry in the fellowship along with links to pages giving information about them. Exec
+can add new ministries through the "Add Ministry" tab that will do three things. First it will automatically generate a new link under the Get Involved tab along with a link to a page for the new ministry.
+Second, it will create a new, approved account on the website with a username and Name set by Exec and password HRAACF. Finally, this new ministry will be able to edit their page upon logging in with their
+new account. With these features, Exec has full power to dynamically control the content of the page.
+
+Finally, the various ministries can login with the names given to them by the Exec user. These ministries will have the ability to edit their very own page on the website through the use of a rich text editor.
+The editor will pull up the current webpage in a simple text editor. The webpage can then be changed by using the text editor and pressing the empty button at the bottom right of the control panel twice. The
+page can then be submitted and automatically converted into HTML and stored. Later users to that ministry's webpage will then see the updated webpage.

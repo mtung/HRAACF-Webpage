@@ -34,7 +34,7 @@
 	if($result==FALSE)
 	  apologize("Unable to create ministry.");
 	
-	$sql = "INSERT INTO pages(username) VALUES ('$username')";
+	$sql = "INSERT INTO pages(username, webpage) VALUES ('$username', 'Currently under construction.')";
 	$result = mysql_query($sql);
 	if($result==FALSE)
 	  apologize("Unable to create ministry webpage.");
