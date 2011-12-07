@@ -26,9 +26,9 @@
 			
 			<div id="center"> 
 				<div class="content" id="contact"> 
-					<h1>Contact Us</h1>
+					<h2>Contact Us</h1>
 					<? while($ministry = mysql_fetch_array($ministries)): ?>
-					  <h2><? echo $ministry["name"] ?></h2>
+					  <h3><? echo $ministry["name"] ?></h2>
 					  <p><? echo $ministry["email"] ?><p>
 					<? endwhile ?> 
 				</div>
