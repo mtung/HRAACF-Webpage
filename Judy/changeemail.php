@@ -29,8 +29,9 @@
 	<body>
 		<?php include_once("identify.php");?> 
 		<div id="wrapper"> 
-			   <?php include_once('includes/navbar.php');?> 
-			   <?php include_once('includes/footer.php');?>
+			<div id="left-side"> 
+				<?php include_once('includes/navbar.php');?> 
+				<?php include_once('includes/footer.php');?>
 			</div> 
 			
 			<div id="center"> 
