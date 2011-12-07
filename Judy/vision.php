@@ -1,3 +1,9 @@
+<? 
+
+require_once("includes/common.php"); 
+
+?> 
+
 <!DOCTYPE html>
 <html>	
 	<head>

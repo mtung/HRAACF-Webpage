@@ -16,7 +16,7 @@
 
     // your database's password
 
-    define("DB_PASSWORD", "");
+    define("DB_PASSWORD", "Marilyn1");
 
     // your database's server
     define("DB_SERVER", "localhost");
