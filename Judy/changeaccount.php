@@ -33,6 +33,7 @@
 				<div id="center"> 
 					<div class="useroptions" id="changeaccount"> 
 						<h1>Change Account</h1> 
+						<center> 
 						<table>
 						<tr>
 						  <td><a href="changepasswordnew.php">Change Password</a></td>
@@ -46,6 +47,7 @@
 						  <td><? echo($user["email"]) ?></td>
 						</tr>
 					  </table>
+					  </center> 
 					</div>
 				</div> 
 				

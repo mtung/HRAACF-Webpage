@@ -43,7 +43,7 @@ height: 800px;
 #usernav
 {
 position:relative; 
-top: 170px; 
+top: 15px; 
 font-family: 'Lato', sans-serif; 
 color: #555252;
 font-size: 16pt; 
@@ -86,7 +86,8 @@ color: #6baed1;
 
 .content
 {
-
+ position:relative; 
+ top: 130px; 
 }
 
 div#footer

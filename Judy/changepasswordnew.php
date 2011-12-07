@@ -54,13 +54,23 @@
 			<div class="useroptions" id="changepassword"> 
 				<h1>Change Password</h1> 
 				<form action="changepasswordnew2.php" method="post"  onsubmit="return validate(this);">
-				Old Password: <input name="old" type="password">
-				<br>
-				New Password: <input name="new" type="password">
-				<br>
-				Re-type Password: <input name="new2" type="password">
-				<br>
-				<input type="submit" value="Change Password">
+				<center> 
+				<table> 
+				<tr> 
+					<td>Old Password: <input name="old" type="password"></td> 
+				</tr> 
+				<tr> 
+					<td>New Password: <input name="new" type="password"></td> 
+				</tr>
+				<tr> 
+					<td>Re-type Password: <input name="new2" type="password"></td> 
+				</tr>
+				<tr> 
+					<td colspan="2" align="center"><input type="submit" value="Change Password"></td> 
+				</tr> 
+				</table>
+				</center> 
+				</form> 
 				<p> <a href="changeaccount.php">go back</a></p> 
 			</div>	
 			</div> 
