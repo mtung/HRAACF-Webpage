@@ -12,9 +12,8 @@
 	
 	// find all unapproved members
 	$sql = "SELECT * FROM users WHERE approved = 0 AND id != 0";
-	$result = mysql_query($sql);
+	$unapproved = mysql_query($sql);
 
-	
 ?>
 
 <!DOCTYPE html>
@@ -25,7 +24,6 @@
 		<?php include_once("includes/header.php");?> 
 	</head>
 	<body> 
-	<?php include_once("identify.php");?> 
 		<div id="wrapper">  
 		
 			<div id="left-side"> 
@@ -37,27 +35,28 @@
 			</div> 
 			
 			<div id="center"> 
-			<div class="useroptions" id="login"> 
-			  <form action="approvemembers2.php" method="post">
-			  <table cellpadding="8">
-				<tr>
-				  <th align=left>Username</td>
-				  <th align=left>Name</td>
-				  <th align=left>Email</td>
-				  <th align=left>Approve?</td>
-				</tr>
-				<? while($unapproved = mysql_fetch_array($result)):?>
-				<tr>
-				  <td align=left><? echo $unapproved["username"] ?></td>
-				  <td align=left><? echo $unapproved["name"] ?></td>
-				  <td align=left><? echo $unapproved["email"] ?></td>
-				  <td> <input name="<?echo $unapproved["id"]?>" type="checkbox"></td>
-				</tr>
-				<? endwhile; ?>
-			  </table>
-			  <br><br>
-			  <input type="submit" value="Approve!">
-			  </form>
+				<div class="useroptions" id="approvemembers"> 
+				  <form action="approvemembers2.php" method="post">
+					  <table cellpadding="8">
+						<tr>
+						  <th align=left>Username</th>
+						  <th align=left>Name</th>
+						  <th align=left>Email</th>
+						  <th align=left>Approve?</th>
+						</tr>
+						<? while($member = mysql_fetch_array($unapproved)):?>
+						<tr>
+						  <td align=left><? echo $member["username"] ?></td>
+						  <td align=left><? echo $member["name"] ?></td>
+						  <td align=left><? echo $member["email"] ?></td>
+						  <td> <input name="<?echo $member["id"]?>" type="checkbox"></td>
+						</tr>
+						<? endwhile; ?>
+					  </table>
+					  <br><br>
+					  <input type="submit" value="Approve!">
+				  </form>
+				</div>
 			</div>
 			
 			<div id="right-side"> 
