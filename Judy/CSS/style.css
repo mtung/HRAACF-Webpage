@@ -134,6 +134,16 @@ textarea {
  text-align: center;
 }
 
+.useroptions2 {
+ font-family: 'Lato', sans-serif; 
+ font-size: 10pt;
+ margin-left: auto; 
+ margin-right: auto; 
+ position: relative; 
+ top: 130px;
+ text-align: center;
+}
+
 /* stylizes links in tables within useroptions div */ 
 .useroptions td a {
 color: #055e11;
@@ -158,7 +168,7 @@ text-align: right;
 #usernavbar {
 text-align: right;
 font-family: 'Raleway'; 
-font-size: 14pt; 
+font-size: 12pt; 
 }
 
 /* footer div */ 

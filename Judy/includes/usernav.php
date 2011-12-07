@@ -16,7 +16,8 @@
 	$html5 = "<br><a href='createministry.php' style='color: #055e11; text-decoration: none'>Create ministry</a>";
 	$html6 = "<br><a href='editministrypage.php?id=".$user["username"]."' style=' color: #055e11; text-decoration: none'>Edit page</a>";
 	$html7 = "<br><a href='register.php' style='color: #055e11; text-decoration: none'>Register</a>"; 
-		  
+	$html8 = "<br><a href='removemembers.php' style='color: #055e11; text-decoration: none'>Remove Members</a>";
+	
 	if($user["id"] != 0)
 	{
 	  print($html1); 
@@ -29,8 +30,9 @@
 	}
 	if($user["exec"] != 0)
 	{
+	  print($html5);
 	  print($html4);
-	  print($html5);	  
+	  print($html8);
 	}
 	if($user["ministry"] > 1)
 	{
