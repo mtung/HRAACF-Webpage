@@ -17,6 +17,6 @@
 		</li> 					
 		<li><a href="announcements.php">Announcements</a></li> 
 		<li><a href="resources.php">Resources</a></li>
-		<li>Pictures</li>
+		<li><a href="pictures.php">Pictures</a></li>
 		<li><a href="contact.php">Contact</a></li>
 </ul> 
