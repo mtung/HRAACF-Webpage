@@ -42,16 +42,17 @@ height: 800px;
 
 #usernav
 {
+text-align: right;
 position:relative; 
 top: 15px; 
 font-family: 'Lato', sans-serif; 
 color: #555252;
 font-size: 16pt; 
-text-align: center;
 }
 
 #usernavbar
 {
+text-align: right;
 font-family: 'Raleway'; 
 font-size: 14pt; 
 }
