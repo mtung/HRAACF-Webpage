@@ -56,15 +56,6 @@ font-family: 'Raleway';
 font-size: 14pt; 
 }
 
-#CMS
-{
-background-color:yellow;
-width: 400px;
-float: left;
-padding: 20px;
-height: 800 px
-}
-
 .useroptions
 {
  font-family: 'Lato', sans-serif; 
@@ -74,6 +65,11 @@ height: 800 px
  position: relative; 
  top: 130px;
  text-align: center;
+}
+
+#approvemembers
+{
+ font-size: 10pt;
 }
 
 #CMS

@@ -13,7 +13,6 @@
 	// find all unapproved members
 	$sql = "SELECT * FROM users WHERE approved = 0 AND id != 0";
 	$result = mysql_query($sql);
-
 	
 ?>
 
