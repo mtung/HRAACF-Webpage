@@ -33,6 +33,7 @@
 		<script src="http://yui.yahooapis.com/2.9.0/build/button/button-min.js"></script>
 		<!-- Source file for Rich Text Editor-->
 		<script src="http://yui.yahooapis.com/2.9.0/build/editor/editor-min.js"></script>
+				
 	</head> 
 	
 	<body> 
@@ -48,8 +49,9 @@
 			<div class="useroptions" id="changeaccount">
 			  <div id="center" class="yui-skin-sam" >
 				<script type="text/javascript">
-					(function() {
 					
+					(function() {
+						
 						var Dom = YAHOO.util.Dom,
 							Event = YAHOO.util.Event;
 						
@@ -63,7 +65,7 @@
 
 						var state = 'off';
 						YAHOO.log('Set state to off..', 'info', 'example');
-
+						
 						YAHOO.log('Create the Editor..', 'info', 'example');
 						var myEditor = new YAHOO.widget.Editor('editor', myConfig);
 						myEditor.on('toolbarLoaded', function()
@@ -138,14 +140,14 @@
 							}, this, true);
 						}, myEditor, true);
 						myEditor.render();
-					})();
+					})();					
 				</script>
 				<form method="post" action="editministrypage2.php" id="form1">
-					<textarea id="editor" name="editor" rows="20" cols="75">
+					<textarea id="editor" name="editor" rows="20" cols="75" on>
 						<? echo $webpage["webpage"] ?>
 					</textarea>
 					<input name="webpage" type="text" id="webpage"><br>
-					<input type="submit" value="Update Page!" onsubmit="return validate(this);">
+					<input type="submit" value="Update Page!">
 				</form>
 			  </div>
 			</div> 
