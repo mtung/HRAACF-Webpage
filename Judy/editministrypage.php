@@ -1,5 +1,15 @@
 <? 
-
+   /******************************************************************************************
+    *
+	* The rich-text editor is adapted from the Yahoo! Developer Network. The YUI 2: Rich Text 
+	* Editor is designed to take plain text and adapt it simply into HTML format. We have 
+	* modified the editor to set an input text field (that was made invisible) equal to the 
+	* html form of the text in the box. The form then submits the HTML to another PHP routine
+	* that performs the appropriate SQL query to store the HTML online in a table called
+	* "pages."
+	*
+	******************************************************************************************/
+	
 	// common code
 	require_once("includes/common.php");
 	require_once("identify.php");
@@ -140,6 +150,7 @@
 						myEditor.render();
 					})();					
 				</script>
+				<!-- Form for holding HTML and submitting -->
 				<form method="post" action="editministrypage2.php" id="form1">
 					<textarea id="editor" name="editor" rows="20" cols="75" on>
 						<? echo $webpage["webpage"] ?>
