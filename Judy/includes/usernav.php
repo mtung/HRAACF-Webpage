@@ -31,7 +31,7 @@
 	  print($html4);
 	  print($html5);	  
 	}
-	if($user["ministry"] != 0)
+	if($user["ministry"] > 1)
 	{
 	  print($html6);
 	}
