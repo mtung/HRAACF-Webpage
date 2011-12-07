@@ -27,10 +27,7 @@
 	<body>
 		<?php include_once("identify.php");?> 
 		<div id="wrapper">  
-			<div id="left-side"> 
-			   <div id="logo">  
-					<a href="index.php"><img src="images/AACFLogo.png" width="300"/></a> 
-			   </div> 
+			<div id="left-side">
 			   <?php include_once('includes/navbar.php');?> 
 			   <?php include_once('includes/footer.php');?>
 			</div> 

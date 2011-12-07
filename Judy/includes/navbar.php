@@ -1,3 +1,7 @@
+<div id="logo">  
+	<a href="index.php"><img src="images/AACFLogo.png" width="230"/></a> 
+</div>
+
 <ul id="menu" class="menu collapsible" > 
 		<li><a href="index.php">Home</a></li>
 		<li><a href="#">About Us</a>

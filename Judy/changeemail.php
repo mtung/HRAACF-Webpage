@@ -13,13 +13,7 @@
 <html>
 	<head>
 		<title>HRAACF: Change Email</title>
-		<link rel="stylesheet" href="CSS/style2.css"> 
-		<link href='http://fonts.googleapis.com/css?family=Lato:300|Raleway:100' rel='stylesheet' type='text/css'>
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
-		<script src="scripts/jquery-1.2.1.min.js" type="text/javascript"></script>
-		<script src="scripts/menu.js" type="text/javascript"></script>
-		<script src="scripts/jquery.cookie.js" type="text/javascript"></script>
-		
+		<?php include_once("includes/header.php");?> 
 		<script>
 			function validate(f)
 			{
@@ -34,11 +28,7 @@
 	</head>
 	<body>
 		<?php include_once("identify.php");?> 
-		<div id="wrapper">  
-			<div id="left-side"> 
-			   <div id="logo">  
-					<a href="index.php"><img src="images/AACFLogo.png" width="300"/></a> 
-			   </div> 
+		<div id="wrapper"> 
 			   <?php include_once('includes/navbar.php');?> 
 			   <?php include_once('includes/footer.php');?>
 			</div> 
