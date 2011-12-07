@@ -20,9 +20,7 @@
 <html>	
 	<head>
 		<title>Harvard-Radcliffe Asian American Christian Fellowship</title>
-		<link rel="stylesheet" href="CSS/style2.css"> 
-		<link href='http://fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Antic' rel='stylesheet' type='text/css'>
+		<? include_once("includes/header.php") ?>
 		
 		<!-- Skin CSS file -->
 		<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.9.0/build/assets/skins/sam/skin.css">
@@ -58,7 +56,7 @@
 							Event = YAHOO.util.Event;
 						
 						var myConfig = {
-							height: '600px',
+							height: '300px',
 							width: '400px',
 							animate: true,
 							dompath: true,
