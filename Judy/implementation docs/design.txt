@@ -39,3 +39,6 @@ Working together, the functions identify.php, navbar.php, usernav.php, listminis
 knowledge of coding whatsoever. Expansions to the site allowing for discussion forums, email lists, or exec modification of the announcements, history, vision, and resources would be easy to implement
 from this website base. We hope that our website combines the practical needs of the fellowship with the coding challenge of providing functionality and adaptability without knowledge of programming
 languages.
+
+One issue that we had is that only one of us could modify our root password while running XAMPP on our computers. Therefore, we had to continuously switch our password for accessing PHPMyAdmin when
+we passed files back and forth using bithub. For ease of use by the graders we are submitting from the computer that has no password for PHPMyAdmin.
