@@ -3,3 +3,39 @@ Collaborators: Matthew Tung and Judy Park
 
 Design:
 
+As mentioned in our documentation, the idea behind our webpage was to give maximal control to the leaders of the group with minimal knowledge of coding required. Our first step was to
+create a flexible login and membership system that would allow both general access to individuals wishing to obtain membership to the webpage while also giving an option to prevent 
+people from "trolling" the site should features such as a discussion board be added. We decided to use an SQL table to keep track of users' id, username, hashed password, real name,
+email address, and then several binary variables describing whether or not they were members of the executive committee, a ministry, or had yet been approved. Naturally, general members
+upon registration would be given values of 0 upon registration, but Exec could later change the approval of members to 1 through the "Approve Members" option. Members of the site could
+then access their personal information or log out. Changing information would bring them to one of three forms that use JavaScript to ensure proper completion of the form and SQL to modify
+the users table accordingly.
+
+The actual webpage uses a 3 column layout. On the left is a navigation bar that uses some nice CSS to create menus that drop down and change color when selected. This navigation bar is created
+using a php file in the includes folder that calls an additional function "listministries.php." This file is part of the full control of the site with minimal coding knowledge mentioned earlier
+and will be discussed in more depth later. The middle column of the webpage displays any current information on the page. The right column provides a simple welcome and user specific options. As
+different members of the webpage should have different options available to them, we decided to use a php file that could inspect the id of the current user and make an appropriate choice of which
+HTML to generate. Users who hadn't signed in would simply see the option to log in. Users who had signed in but weren't members of exec or a ministry would have the option to change their info or
+log out. In addition, members of ministries would have the option to edit their page, which will be described in more detail later. Members of exec wouldn't have a page to edit, but could approve
+newly registered members or create new ministries. Knowlege of the current user's identity is accomplished through a small routine called "identify.php" which uses SESSION data to notice the user's
+id.
+
+The full control over the website without coding knowledge comes through 2 major features of the website. First, Exec is able to create new ministries that will have full ministry privileges simply
+by filling out an HTML form available to their account. These ministries and all previously created ones, automatically have a page located under the "Get Involved" tab that they can edit without
+knowledge of HTML. To generate pages for each ministry, creation of a ministry not only creates a row in the users SQL table, but also in the second, "pages" table. The pages table keeps track of an
+id as well as a username (the same as the ministry's username for the site) as well as a large variable for the HTML making up the ministry's page. The ministries can access and modify this HTML data
+through a simple text editor rather than HTML coding.
+
+The text editor is modified from the Yahoo! Developers' Network project YUI 2: Rich Text Editor. Implementation of this code was able to create a text editor that could convert simple text to the
+HTML representing it with the press of a button. We modified this editor to be a part of a form that would store the generated HTML and pass it to another php file that would then push the HTML to the
+pages SQL table. The design of the webpage, text editor, and SQL table is all to allow for any number of ministries to be present on the site without the need for any additional coding. The Get Involved
+tab on the navigation page uses a php routine that loops through all of the ministries and creates menu icons and links to a single function "ministrypage.php" that will pass that function data
+corresponding with each ministry via the GET method. Clicking any of these links passes the ministrypage.php file the username of the particular ministry and then pulls that ministry's HTML from the SQL
+table to generate that ministry's page. Ministries can access their page by clicking on the "Edit Page" link. This link calls a single function "editministrypage.php" that uses identify.php to know which
+ministry is accessing the page. Editministrypage.php will then pull the current HTML off of the SQL table to pre-populate the text editor to allow for quick, simple edits. By pressing the empty button
+in the bottom-right of the control panel twice then loads the modified HTML into a text input in the page's form and submits it to a SQL query that pushes the new HTML to the SQL pages table.
+
+Working together, the functions identify.php, navbar.php, usernav.php, listministries.php, ministrypage.php, and editministrypage.php allow for massive control over the website with absolutely no
+knowledge of coding whatsoever. Expansions to the site allowing for discussion forums, email lists, or exec modification of the announcements, history, vision, and resources would be easy to implement
+from this website base. We hope that our website combines the practical needs of the fellowship with the coding challenge of providing functionality and adaptability without knowledge of programming
+languages.
