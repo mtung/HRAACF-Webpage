@@ -1,6 +1,11 @@
 <? 
-
-require_once("includes/common.php"); 
+  
+  // common code
+  require_once("includes/common.php");
+  
+  // find all ministries
+  $sql = "SELECT * FROM users WHERE ministry != 0";
+  $ministries = mysql_query($sql);
 
 ?> 
 
@@ -20,23 +25,13 @@ require_once("includes/common.php");
 			</div> 
 			
 			<div id="center"> 
-			<div class="content" id="contact"> 
-				<h1>Contact Us</h1> 
-				<h2>Staff<h2> 
-					<p>Lue Qin: <p> 
-					<p>Victoria Lo: <p> 
-				<h2>Exec</h2> 
-					<p>Joy Choi: </p> 
-					<p>Tony Shen: </p> 
-					<p>Jeremy Yang: </p> 
-					<p>Sharon Song: </p> 
-				<h2>Upper Class Groups: </h2> 
-					<p>Tony Shen: </p> 
-				<h2>Frosh Class Groups: </h2> 
-					<p>Jeremy Yang: </p> 
-				<h2>Large Group: </h2> 
-				
-			</div>
+				<div class="content" id="contact"> 
+					<h1>Contact Us</h1>
+					<? while($ministry = mysql_fetch_array($ministries)): ?>
+					  <h2><? echo $ministry["name"] ?></h2>
+					  <p><? echo $ministry["email"] ?><p>
+					<? endwhile ?> 
+				</div>
 			</div>
 			
 			<div id="right-side"> 
